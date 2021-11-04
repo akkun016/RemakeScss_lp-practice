@@ -1,102 +1,7 @@
-@charset "UTF-8";
-ol, ul {
-  list-style: none;
-}
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-body {
-  line-height: 1;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-nav ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-/* change colours to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* change border colour to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-input, select {
-  vertical-align: middle;
-}
+@charset "utf-8";
+@import './base';
+@import './reset';
+@import './variable';
 
 /* ヘッダーの装飾 */
 header {
@@ -122,7 +27,7 @@ header {
   padding: 12px 14px;
   font-size: 12px;
   color: #ffffff;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .contact-btn:hover {
@@ -132,7 +37,7 @@ header {
 .hamburger-menu-btn {
   height: 40px;
   width: 50px;
-  border: solid 1px #bebebe;
+  border: solid 1px rgb(190, 190, 190);
   border-radius: 5px;
   cursor: pointer;
   background-color: transparent;
@@ -143,7 +48,7 @@ header {
   display: block;
   height: 2px;
   width: 30px;
-  background-color: #bebebe;
+  background-color: rgb(190, 190, 190);
   margin-bottom: 8px;
 }
 
@@ -163,7 +68,7 @@ button {
 /* メインタイトル、サブタイトル部分の装飾 */
 .keyvisual {
   width: 100%;
-  background: center/cover no-repeat url("../img/keyvisual/keyvisual.jpg");
+  background: center / cover no-repeat url("../img/keyvisual/keyvisual.jpg");
   text-align: center;
   margin-top: 78px;
 }
@@ -304,7 +209,7 @@ h3 {
   color: #8c8c8c;
   overflow: hidden;
   font-size: 40px;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .sns-links > i:hover {
@@ -327,8 +232,13 @@ footer {
   letter-spacing: 0.5px;
 }
 
+
+
+
+
+
 /* PCのレスポンシブ対応 */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width:1200px) {
   .header-nav {
     width: 1100px;
   }
@@ -344,7 +254,7 @@ footer {
   .keyvisual > h1 {
     font-size: 65px;
   }
-
+  
   .keyvisual > h2 {
     font-size: 40px;
   }
@@ -381,8 +291,12 @@ footer {
     margin: 0 auto;
   }
 }
+
+
+
+
 /* TABのレスポンシブ対応 */
-@media screen and (max-width: 1199px) and (min-width: 768px) {
+@media screen and (max-width:1199px) and (min-width:768px) {
   .header-nav {
     width: 97%;
   }
@@ -398,7 +312,7 @@ footer {
   .keyvisual > h1 {
     font-size: 65px;
   }
-
+  
   .keyvisual > h2 {
     font-size: 40px;
   }
@@ -430,8 +344,12 @@ footer {
     margin: 0 auto;
   }
 }
+
+
+
+
 /* SPのレスポンシブ対応 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width:767px) {
   .header-nav {
     width: 97%;
   }
@@ -451,7 +369,7 @@ footer {
   .keyvisual > h1 {
     font-size: 40px;
   }
-
+  
   .keyvisual > h2 {
     font-size: 30px;
   }
